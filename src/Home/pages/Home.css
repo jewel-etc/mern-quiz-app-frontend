@@ -1,0 +1,221 @@
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+}
+
+.image-caption-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+ 
+  height: 60%;
+  margin: 10px;
+}
+
+.caption-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  flex-wrap: wrap;
+  width: 75%;
+  
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 250px;
+
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 25%;
+
+  background-image: url("https://picsum.photos/id/201/1980/1080");
+  height: 250px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user-name-subjects-conatiner {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.user-learning-container,
+.choose-subjets-container {
+  display: flex;
+  width: 100%;
+
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px;
+  align-items: center;
+
+  
+  
+}
+
+.choose-subjets-container{
+
+  margin-bottom: 0;
+}
+.user-learning-container {
+  justify-content: space-between;
+}
+
+.user-learning-container a {
+  text-decoration: none;
+  font-size: medium;
+}
+.user-learning-container a:active,
+.user-learning-container a.active,
+.user-learning-container a:hover{
+  color:blue
+}
+
+@media (max-width: 950px) {
+  .caption-container {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .image-container {
+    width: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .caption-container {
+    width: 65%;
+    font-size: 0.9rem;
+  }
+
+  .image-container {
+    width: 35%;
+  }
+}
+
+@media (max-width: 700px) {
+  .user-learning-container {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .caption-container {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .image-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .choose-subjets-container {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .image-caption-container {
+    flex-direction: column-reverse;
+  }
+  .caption-container {
+    width: 100%;
+    padding: 5px;
+    height: auto;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 200px;
+  }
+  .user-learning-container,
+  .choose-subjets-container
+  {
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .user-learning-container,
+  .choose-subjets-container
+   {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .caption-container {
+    font-size: 0.7rem;
+  }
+  .user-learning-container,
+  .choose-subjets-container
+  {
+    font-size: 1rem;
+  }
+
+  .user-learning-container a {
+    font-size: 0.9rem;
+  }
+  
+}
+
+@media (max-width: 350px) {
+  .user-learning-container {
+    flex-direction: column;
+    padding: 5px;
+  
+    align-items: flex-start;
+  }
+
+  .user-learning-container a {
+ 
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+  }
+  .choose-subjets-container{
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 300px) {
+  .caption-container {
+    font-size: 0.6rem;
+  }
+  .user-learning-container {
+    flex-direction: column;
+    padding: 5px;
+    padding-left: 5px;
+    font-size: .8rem;
+  }
+  .user-learning-container a {
+ 
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+    font-size: .8rem;
+   
+  }
+  .choose-subjets-container{
+    font-size: .8rem;
+    padding-left: 5px;
+  }
+}

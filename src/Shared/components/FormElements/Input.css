@@ -1,0 +1,132 @@
+.form-control {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  padding-top: 5px;
+  /* border:5px solid blue */
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+  width: 100%;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  padding: 0.15rem 0.25rem;
+  margin-top: 2px;
+  padding: 0.15rem 0.25rem;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+
+  border-color: #000000;
+}
+
+.form-control input{
+    height:40px;
+}
+
+.form-control p{
+  display: flex;
+  align-items: center;
+  width:100%;
+  height:15px;
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+
+}
+
+.form-control-invalid p{  
+  
+   color:red
+}
+
+.form-control input:disabled,
+.form-control input:hover:disabled,
+.form-control input:active:disabled ,
+.form-control textarea:disabled,
+.form-control textarea:hover:disabled,
+.form-control textarea:active:disabled
+
+{
+  background: #ccc;
+  color: #929292;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.form-control-option{
+
+  width:20%;
+  justify-content: center;
+  justify-items: center;
+
+}
+
+.form-control-option label{
+  text-align: center;
+}
+
+.form-control-show-password input{
+  border-right: none;
+  width:90%;
+}
+
+
+.show-password-container,
+.show-password-container-disabled,
+.show-admin-password-container
+{
+  
+  outline:none;
+  width:10%;
+  height:40px;
+  padding: 0.15rem 0.25rem;
+  margin-top: 2px; 
+
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: none;
+  cursor:pointer;
+}
+
+.show-password-container-disabled
+{
+  background: #ccc;
+  color: #929292;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+  .form-control-option {
+    width:100%;
+  }
+  .form-control-option label{
+    text-align: left;
+  }
+  .form-control label{
+    font-size: 1rem;
+  }
+}
+

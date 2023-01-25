@@ -1,0 +1,135 @@
+.topics-container {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+ 
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top: 10%;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  height: 500px;
+  animation: fade_in_show .3s;
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.topic-details-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+
+  font-size: 1.5rem;
+
+  text-align: center;
+}
+
+.topic-details-container {
+  width: 100%;
+  height:400px;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+ 
+ max-height:350px;
+  overflow-y: auto;
+  
+}
+
+.topic-details-container:hover{
+  cursor: pointer;
+}
+
+.topic-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  flex-wrap: wrap;
+  width:40%;
+ 
+  margin: 10px;
+  padding:5px;
+  font-size: small;
+  font-weight: bold;
+  /* background-color: red; */
+}
+
+.topic-container:hover{
+  cursor: pointer;
+  background-color: rgb(216, 218, 219);
+}
+.topic-name-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+ 
+  
+}
+.topic-ques-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color:blue
+}
+
+.fav-goto-btn-container{
+  height:60px;
+  width:100%;
+
+  padding:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+@media(max-width:850px){
+  .topics-container{
+    width:90%;
+   
+  }
+ 
+}
+
+@media(max-width:550px){
+  .topics-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    width:85%;
+    height: fit-content;
+  }
+  .topic-container{
+    width: 100%;
+  }
+  
+}

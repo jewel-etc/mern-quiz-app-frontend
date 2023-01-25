@@ -1,0 +1,165 @@
+.button {
+  font: inherit;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #0f0f0f;
+ 
+  background: #0f0f0f;
+  color: white;
+  cursor: pointer;
+  margin: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: medium;
+  
+  padding: 10px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: #2e2d2d;
+  border-color: #2e2d2d;
+}
+
+.button--inverse {
+  background: transparent;
+  color: #0f0f0f;
+}
+
+.button--inverse:hover,
+.button--inverse:active {
+  color: white;
+  background: #0f0f0f;
+}
+
+.button--danger {
+  background: #830000;
+  border-color: #830000;
+}
+
+.button--danger:hover,
+.button--danger:active {
+  background: #f34343;
+  border-color: #f34343;
+}
+
+.button--update {
+  margin: 0;
+  padding: 5px;
+  font-size: x-small;
+  margin-right: 10px;
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: white;
+}
+
+.button--update:hover {
+  background-color: #ffa500;
+  border-color: #ffa500;
+  color: white;
+}
+
+.ok--button {
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.show--button,
+.reset--button
+
+
+ {
+  background-color: rgb(105, 55, 245);
+  border-color: rgb(105, 55, 245); 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+
+
+
+.show--button:hover,
+.reset--button:hover
+
+{
+  background-color: rgb(95, 78, 247);
+  border-color: rgb(95, 78, 247);
+
+
+}
+
+.cancel--button {
+  margin: 0;
+  padding: 5px;
+  font-size: x-small;
+ 
+}
+
+
+.addToFav--button,
+.goToFav--button,
+.add--button
+{
+  background-color: rgba(255, 115, 0, 0.966);
+  border-color: rgba(255, 115, 0, 0.966);
+}
+
+.addToFav--button:hover,
+.goToFav--button:hover,
+.add--button:hover
+ {
+  background-color: rgba(255, 128, 24, 0.966);
+  border-color:rgba(255, 128, 24, 0.966);
+}
+
+.saveToPro--button {
+  background-color: green;
+  border-color: green;
+}
+
+.saveToPro--button:hover {
+  background-color: rgb(0, 173, 0);
+  border-color: rgb(0, 173, 0);
+}
+
+
+
+.button:disabled,
+.button:hover:disabled,
+.button:active:disabled {
+  background: #ccc;
+  color: #979797;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button--small {
+  font-size: 0.8rem;
+}
+
+.button--big {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: small;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 300px) {
+  .button {
+    padding: 5px;
+    margin: 5px;
+  }
+}

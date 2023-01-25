@@ -1,0 +1,351 @@
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  justify-items:flex-end;
+  align-items: center;
+  list-style: none;
+  height: 3rem;
+  padding-left: 0;
+  
+  width:100%
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a.active {
+  color: rgb(74, 74, 255);
+}
+
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-right: 15px; 
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.dropdown-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  border: 1px solid rgb(223, 219, 219);
+  width:5rem
+}
+
+.dropdown-menu-container:hover {
+  padding-top: 15px;
+}
+
+.dropdown-menu-container:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu {
+  display:none;
+  flex-direction: column;
+  position: relative;
+  top: 0.9rem;
+  background-color: rgb(255, 255, 255);
+  padding-left: 0;
+  width: auto;
+  text-align: left;
+  border-top: 3px solid white;
+  animation: fade_in_show .3s;
+  
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.dropdown-menu li {
+  width: 6rem;
+  margin-left: 0;
+  height: 100%;
+  border-bottom: 1px solid white;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  justify-content: flex-start;
+}
+
+.main-menu-login-container,
+.main-menu-signup-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  margin-left: 5px;
+  height: 2rem;
+  
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.nav-links .main-menu-my-fav {
+  width: 2.5rem;
+  
+  margin-right: 10px;
+ 
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  padding: 0;
+  margin-left: 0px;
+ 
+}
+
+
+.main-menu-my-fav a{
+  display: flex;
+  padding: 0;
+  
+ 
+}
+
+.fav{
+  display:flex;
+  font-size: 1.3rem;
+  color:rgb(4, 14, 158);
+ 
+}
+
+.fav-count-container{
+  display: flex;
+   position: absolute;
+  top:20%;
+  margin-left: 25px;
+  
+}
+
+
+
+.fav-count {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+ 
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+ 
+  font-size: x-small;
+
+}
+.main-menu-login-container {
+  background-color: black;
+  color: white;
+}
+.main-menu-login-container:hover {
+  background-color: rgb(48, 47, 47);
+}
+
+.main-menu-signup-container {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.main-menu-signup-container:hover {
+  background-color: rgb(148, 148, 148);
+  color: rgb(255, 255, 255);
+}
+
+.main-profile-menu-container .dropdown-menu-container {
+  border: 1px solid rgb(223, 219, 219);
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  width: 3rem;
+
+}
+
+.main-profile-menu-container li{
+  margin-right: 0;
+}
+
+
+.main-profile-menu-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: rgb(105, 55, 245);
+  color: white;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.dropdown-menu .main-profile-menu-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  cursor: default;
+}
+
+.dropdown-menu .main-profile-menu-logout {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+}
+
+.dropdown-menu .main-profile-menu-logout:hover {
+  color: rgb(74, 74, 255);
+}
+
+.main-menu-user-name {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(36, 35, 35);
+  height: 70px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-bottom: 1px solid black;
+  cursor: default;
+}
+
+
+@media (max-width: 900px) {
+  .nav-links {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .nav-links li {
+    width: 100%;
+    margin-left: 15px;
+    padding-left: 0;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:active,
+  .nav-links a.active {
+    color: rgb(74, 74, 255);
+    background-color: transparent;
+  }
+
+  .nav-links li:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    background-color: rgb(170, 167, 167);
+  }
+
+  .nav-links li a {
+    justify-content: flex-start;
+    padding: 0;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  .sidedrawer-dropdown-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+    justify-content: center;   
+    margin-bottom: 5px;   
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .sidedrawer-dropdown-menu-container span {
+    padding-left: 5px;
+  }
+
+  
+  .dropdown-menu {
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-top: 2px solid white;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+  
+    animation: none;
+  }
+
+  .dropdown-menu li {
+    border: none;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .dropdown-menu li a {
+    color: black;
+  }
+
+
+ 
+  .nav-links .main-menu-my-fav {
+    display: none;
+  }
+  .main-menu-login-container,
+  .main-menu-signup-container {
+    display: none;
+  }
+
+  .main-profile-menu-container {
+    display: none;
+  }
+}

@@ -1,0 +1,150 @@
+.show-and-modify-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 49%;
+  border: 1px solid rgb(207, 206, 206);
+  margin-top: 5px;
+  margin-bottom: 20px;
+ 
+  padding-bottom: 5px;
+  transition: transform 1s; 
+
+  
+}
+
+.show-and-modify-form-container:hover{
+  box-shadow: 0 2px 6px rgba(55, 4, 238, 0.918);
+  transform: scale(1.02);
+}
+
+
+
+.show-and-modify-form-heading-container {
+  display: flex;
+  width: 100%;
+ 
+  align-items: center;
+  align-content: center;
+ 
+  justify-content: space-between;
+  padding: 5px;
+
+  height: 50px;
+ 
+}
+
+.show-and-modify-form-heading {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+
+  height: 100%;
+  padding-left: 5px;
+
+
+  width: 100%;
+  font-weight: bold;
+  color:blue
+}
+
+.show-and-modify-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+
+  height: 50px;
+}
+
+.add-tooltip-text,
+.edit-tooltip-text,
+.delete-tooltip-text {
+  display: flex;
+  height: 20px;
+
+  font-size: small;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-size: x-small;
+  padding: 5px;
+  margin-right: 5px;
+ 
+  cursor: pointer;
+}
+
+.add-tooltip-text {
+  color: rgb(4, 134, 4);
+}
+
+.edit-tooltip-text {
+  color: orange;
+}
+
+.delete-tooltip-text {
+  color: red;
+}
+
+.delete-tooltip-text {
+  margin-right: 0;
+}
+
+.modify-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+ 
+}
+
+.update-msg-container,
+.delete-msg-container,
+.update-completed-msg-container,
+.delete-completed-msg-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: orange;
+  height: 100%;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.delete-msg-container,
+.delete-completed-msg-container {
+  background-color: rgb(243, 64, 64);
+}
+
+@media(max-width:650px){
+  .show-and-modify-form-container{
+    width:100%
+  }
+}
+
+@media (max-width: 450px) {
+  .show-and-modify-form-heading-container {
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
+  .show-and-modify-container {
+    justify-content: center;
+  }
+  .show-and-modify-form-heading {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .modify-button-container {
+    justify-content: center;
+    justify-items: center;
+  }
+}
